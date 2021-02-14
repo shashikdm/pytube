@@ -16,7 +16,7 @@ default_range_size = 9437184  # 9MB
 
 
 def _execute_request(url, method=None, headers=None):
-    base_headers = {"User-Agent": "Mozilla/5.0", "accept-language": "en-US,en"}
+    base_headers = {"User-Agent": "Mozilla/5.0", "accept-language": "en-US,en", "cookie": "{'GPS': '1', 'PREF': 'tz=Asia.Kolkata', 'VISITOR_INFO1_LIVE': 'qV6KttXpytM', 'YSC': 'BcPfqnYUpJg'}"}
     if headers:
         base_headers.update(headers)
     if url.lower().startswith("http"):
